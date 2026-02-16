@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color:#0090f0;
+  --p-color:#7b7b7b;
+  --bg-color:#f3f3f3;
+  --white-color:#fff;
+  --color-heading:#253237;
+  --border-color:#d6d6d6d5;
+}
+body{
+  font-family: "Inder", sans-serif;
+  background: #fff;
+  padding-top: 150px;
+}
+img{
+  width: 100%;
+}
+h1,h2,h2,h3,h4,h6{
+  color:var(--main-color);
+  font-family: "DM Sans" ,sans-serif ;
+}
+span{
+  color:var(--main-color)
+}
+p{
+  color:var(--p-color)
+}
+input,button,select,textarea{
+  outline: none;
+  border:none;
+}
+a{
+  text-decoration: none;
+  color:var(--color-heading)
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+/* toast */
+.toast-wrapper{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  min-width: 300px;
+  max-width: 300px;
+}
+.toast-wrapper .img-toast{
+  width: auto;
+  height: 50px;
+  object-fit: cover;
+}
+.toast-wrapper strong{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.toast-content{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  font-size: 14px;
+}
+.toast-content .btn{
+  margin-top: 15px;
+  font-size:13px ;
+}

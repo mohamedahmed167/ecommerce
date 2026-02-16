@@ -1,0 +1,92 @@
+.pay-container{
+  width: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 10px auto;
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 15px 15px 20px 20px rgba(0 0 0 /0.12);
+}
+*{
+  box-sizing: border-box;
+}
+.contetn{
+  position: relative;
+  top:0;
+}
+.content p{
+  font-size: 13px;
+  color:gray;
+}
+.content span{
+  font-size: 10px;
+  color: #beb0b0;
+}
+.content h1{
+  font-size: 22px;
+  margin: 10px 0 20px;
+}
+.pay-container .visa img{
+  width: 30px;
+}
+.visa{
+  display: flex;
+  margin-top: 15px;
+  justify-content:space-between;
+  align-items: center;
+  top:120px;
+  left: 40px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  border:4px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                            linear-gradient(90deg, #1a13a0, #c54494) border-box;
+                            transition: 0.3s ease-in-out;
+                            padding-right: 40px;
+}
+.visa:hover{
+  scale: 1.1;
+}
+.img-content{
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+}
+.img-content img{
+  width: 35px;
+  margin-bottom: 6px;
+}
+.img-content p{
+  font-size: 12px;
+  color:gray;
+}
+.pay-icon{
+  font-size: 22px;
+  transition: 0.3s;
+}
+.pay-icon:hover{
+  color:transparent;
+  background: linear-gradient(90deg, #1a13a0, #c54494);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn.pay{
+  margin-top: 20px;
+  width: 70%;
+  text-align: center;
+  display: block;
+}
+.new-method{
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+.img-content span{
+  word-spacing: 10px;
+}

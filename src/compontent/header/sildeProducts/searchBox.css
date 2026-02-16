@@ -1,0 +1,26 @@
+.search-box-container{
+position: relative;
+}
+.filtering{
+position: absolute;
+background: #fff;
+width: 100%;
+list-style: none;
+border:1px solid var(--border-color);
+transition: 0.3s ease-in-out;
+}
+.filtering li img{
+    width: 30px;
+}
+.filtering li{
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.filtering li span {
+  font-size: 14px;
+}
