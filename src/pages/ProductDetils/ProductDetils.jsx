@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import "./ProductDetils.css"
-import ProductDetilsLoading from './productDetilsLoading';
+import ProductDetilsLoading from './ProductDetilsLoading';
 import SildeProducts from '../../compontent/header/sildeProducts/SildeProducts';
 import SildeProductsLoading from '../../compontent/header/sildeProducts/SildeProductsLoading';
 import ProductImages from './ProductImages';
