@@ -15,30 +15,54 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 import PageAnmation from '../../PageAnmation';
 function SildeProducts({ title, data }) {
+  console.log("Received props:", title, data);
+
+
+
+
+
+
     return (
-   <PageAnmation>
-         <div className='silde-products silde'>
-            <div className="container">
-                <div className="top-silde">
-                    <h2>{title}</h2>
-                    <p>{data.description}</p>
+        <PageAnmation>
+            <div className='silde-products silde'>
+                <div className="container">
+                    <div className="top-silde">
+                        <h2>{title}</h2>
+                        <p>{data.description}</p>
+                    </div>
+                    <Swiper slidesPerView={4}
+                        loop={true}
+                        autoplay={{
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        }}
+                        className="swiper"
+                        navigation={true} modules={[Navigation, Autoplay]}
+                        breakpoints={{
+                            0: {          // من 0 بيكسل
+                                slidesPerView: 1,
+                                centeredSlides: true, // دي أهم خاصية عشان التوسيط
+        spaceBetween: 10,
+                            },
+                            640: {        // من 640px (موبايل كبير/تابلت صغير)
+                                slidesPerView: 2,
+                                centeredSlides: false,
+                            },
+                            1024: {       // من 1024px (ديسكتوب)
+                                slidesPerView: 4,
+                                centeredSlides: false,
+                            },
+                        }}
+                    >
+                        {data.map((item) => {
+                            return (
+                                <SwiperSlide><Product item={item} /></SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
                 </div>
-                <Swiper slidesPerView={4}
-                    loop={true}
-                    autoplay={{
-                        delay: 3500,
-                        disableOnInteraction: false,
-                    }}
-                    navigation={true} modules={[Navigation, Autoplay]} className="mySwiper">
-                    {data.map((item) => {
-                        return (
-                            <SwiperSlide><Product item={item}/></SwiperSlide>
-                        )
-                    })}
-                </Swiper>
             </div>
-        </div>
-   </PageAnmation>
+        </PageAnmation>
     )
 }
 

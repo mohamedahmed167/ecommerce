@@ -24,6 +24,7 @@ header{
     width: 130px;
     max-height: 65px;
 }
+
 .Top-header .seacrch_box{
     width: 500px;
     border-radius: 30px;
@@ -38,6 +39,48 @@ header{
     padding: 5px 15px 5px 20px;
     background-color: var(--bg-color);
     border-radius:  30px 0  0 30px;
+}
+@media (max-width:767px) {
+    .Top-header .seacrch_box{
+        width: 110px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+    .Top-header .seacrch_box input{
+        width: 110px;
+        background: #000;
+        height: 30px;
+        font-size: 10px;
+    }
+        .Top-header .seacrch_box input::placeholder{
+            font-size: 12px;
+            color:white;
+    }
+   .seacrch_box button[type="submit"]{
+        height: 30px;
+        width: 70px;
+        font-size: 14px;
+        background: #000;
+        color: wheat;
+        border: none;
+    }
+    .header-icons .icon .dark-mode{
+        width: 80px;
+    }
+       .seacrch_box button[type="submit"] svg{
+        width: 40px;
+       }
+       .Top-header .logo{
+        max-width: 70px;
+       }
+       .Top-header .header-icons .icon svg{
+        width: 20px;
+       }
+       a.btn{
+        font-size: 10px;
+        margin-bottom: 5px;
+       }
 }
 .Top-header button{
     color:var(--white-color);
@@ -166,4 +209,28 @@ font-size: 20px;
     width: 36px;
     height: 40px;
     font-size: 100px;
+}
+@media (max-width:767px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .category-nav{
+        position: relative;
+    }
+    .nav-links{
+        position: absolute;
+        background: #000;
+        top:48px;
+        right:-200px;
+    }
+    .nav-links li{
+        background-color: var(--main-color);
+        border-bottom: 1px solid #ddd;
+        padding:20px 35px;
+    }
+    .nav-links li:not(:last-child)
+    {
+        border: none;
+    }
 }

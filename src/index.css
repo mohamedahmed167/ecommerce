@@ -73,3 +73,16 @@ a{
   margin-top: 15px;
   font-size:13px ;
 }
+.swiper-slide img {
+    width: 100%;       /* تاخد كامل العرض */
+    height: 100%;      /* تاخد كامل الارتفاع المتاح */
+    object-fit: cover; /* عشان الصورة متتمطش وتحافظ على أبعادها */
+    display: block;
+}
+
+/* تنسيق المحتوى فوق الصورة في الموبايل */
+@media (max-width: 768px) {
+.swiper-wrapper{
+  
+}
+}

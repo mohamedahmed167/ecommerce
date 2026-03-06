@@ -29,6 +29,18 @@ left:5%;
   margin-top: 2.5vw;
   margin-bottom:  2.5vw;
 }
+@media (max-width:767px) {
+  .swiper-slide .img-mo{
+    width: 100%;
+  }
+  .swiper-slide .content h3{
+    font-size: 20px;
+  }
+  .swiper-slide .content p{
+    margin-top: -15px;
+    font-size: 14px;
+  }
+}
 .btn{
   padding:10px 20px;
   text-transform: capitalize;

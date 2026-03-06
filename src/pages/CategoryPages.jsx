@@ -18,10 +18,12 @@ function CategoryPages() {
     return ( <PageAnmation key={category}>
        <div className="category-pages">
         <div className="container">
-             <div className="top-silde">
+            {categoryProducts.length >0 &&(
+                 <div className="top-silde">
                     <h2>{categoryProducts[0].category}</h2>
                     <p>{categoryProducts[0].description}</p>
                 </div>
+            )}
             <div className="Category-page">
                 {categoryProducts.map((item,index)=>(
                         <Product item={item} key={index} />

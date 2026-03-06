@@ -16,10 +16,10 @@ export default function TopHeader() {
             <div className='container'>
                 <Link to="/" className='logo'> <img src={Logo} alt="logo" /></Link>
                 <SearchBox />
+                
                 <div className="header-icons">
                     <div className="icon dark">
                         <MdOutlineDarkMode className='dark-mode'
-
                         />
                     </div>
                     <div className="icon">

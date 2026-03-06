@@ -54,9 +54,7 @@ setFiltering([]);
                     value={searchItem}                     // ✅ مهم
                     onChange={(e) => setSearchItem(e.target.value)}
                 />
-                <button type='submit'>
-                    <IoSearch />
-                </button>
+                <button type='submit'><IoSearch /></button>
             </form>
             {filtering.length > 0 && (
                 <ul className='filtering'>

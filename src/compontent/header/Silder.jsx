@@ -48,7 +48,7 @@ function Silder() {
                                 <p>windows xp/10/7/8 ps3, tv ,Box</p>
                                 <Link to="/" className="btn">Shop Now</Link>
                             </div>
-                            <img src="/images/banner_Hero2.jpg" alt="silder-hero 1" />
+                            <img className='img-mo' src="/images/banner_Hero2.jpg" alt="silder-hero 1" />
                         </SwiperSlide>
                     </Swiper>
                 </div>

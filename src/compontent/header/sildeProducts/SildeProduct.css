@@ -149,3 +149,39 @@ fill:var(--white-color)
     .product .icons span.in-fav svg{
         fill: var(--white-color);
     }
+@media (max-width:767px) {
+    .silde-products{
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+/* تنسيق السلايدر في الموبايل */
+@media (max-width: 640px) {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        /* بيصغر الحجم الكلي للمحتوى داخل السلايد */
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+    }
+
+    /* لو عايز الكارت النشط بس هو اللي يبقى كبير واللي جنبه صغيرين (حركة شيك) */
+    .swiper-slide-active {
+        transform: scale(1);
+    }
+
+    /* تحديد عرض أقصى للمنتج داخل السلايد */
+    .silde-products .product-card {
+        width: 85%; /* أو جرب بالبكسل مثلا 250px */
+        margin: 0 auto;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+   --swiper-navigation-size:26px;
+    }
+        .swiper-button-prev{
+
+          position:absolute;
+          left: 20px;
+        }
+}

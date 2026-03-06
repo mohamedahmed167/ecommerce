@@ -16,6 +16,13 @@
     align-items: center;
     gap:50px
 }
+@media (max-width:767px) {
+.items-detils .container{
+    display: flex;
+    flex-direction: column;
+}
+
+}
 .items-detils .container .imgs-item{
     width: 40%;
 }
@@ -37,6 +44,23 @@ margin-top: 20px;
 }
 .small-img img{
     width: 24%;
+}
+@media (max-width:767px) {
+    .small-img img{
+        width: 70%;
+    }
+    .items-detils .imgs-item .big-img img{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+    .items-detils .container .small-img{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
 }
 .items-detils .details-item{
     width: 58%;
